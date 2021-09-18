@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<form method="post" name="googlesheet" action="">
+		<table border="1">
+			<tr>
+				<td>Вік <input type="text" name="age" id="Вік" value="" jsname="YPqjbf" autocomplete="off"></td>
+          <td>Стать Ч: <input type="radio" name="sex" value="1" id="Стать"> Ж : <input type="radio" value="2" name="Стать" id="Стать" checked></td>
+          <td>Зріст <input type="text" name="Height" id="parametr" value=""></td>
+        </tr>
+        <tr>
+          <td>АТ: <input type="text" name="sad" id="САД">/<input type="text" name="dad" id="parametr" value=""></td>
+          <td>ЧСС: <input type="text" name="heartrate" id="ДАД" value=""></td>
+          <td>Вага: <input type="text" name="Вага" id="Вага" value=""></td>
+        </tr>
+        <tr>
+          <td>Окружність талії <input type="text" name="waistcircumference" id="Окружність талії"></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <input type="submit" name="submit">
+	  
+    </form>
+	<div id="elem"></div>
+	<script src="script.js"></script>
+    <script type="text/javascript">
+
+var elem = document.querySelector('#elem');
+
+createTable(elem, 4, 4);
+
+function createTable(parent, rows, cols){
+var table = document.createElement('table');
+
+for (i = 0; i < rows; i++){
+
+  var tr = document.createElement('tr');
+    for (j = 0; j < cols; j++){
+      var td = document.createElement('td');
+      tr.appendChild(td);
+}
+  table.appendChild(tr);
+}
+
+  parent.appendChild(table);
+}
+
+    </script>
+    
+    
+  </body>
+</html>

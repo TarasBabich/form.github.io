@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body class="font-family">
+    <form method="POST">
+      Дата: <input type="text" name="data[Дата 1-го візиту]" size="40">
+      <div class="flex-row">
+      наявність інсульту в учасника клінічних досліджень в сімейному анамнезі<input type="radio" name="Стать" value="1">
+      <input type= "radio" name="Стать" value= "2"  checked></div>
+<div class="flex-row"> 
+      наявність інфаркту міокарда в учасника клінічних досліджень в сімейному анамнезі<input type="radio" name="variant-23" value="1">
+      <input type= "radio" name="variant-23" value= "2"  checked></div>
+
+      <p class="h3_style">Демографічні дані</p>
+      <table class="table-style" cellpadding="5">
+        <tr class="tr-style"><td>Вік: <input type="text"></td><td>Стать: Ч:<input type="radio" name="H" value="1">Ж:<input type="radio" value="2" name="H"></td><td>Зріст: <input type="text"> см</td></tr>
+        <tr class="tr-style"><td>АТ: <input type="text" class="size-1">/<input type="text" class="size-1"> мм рт. ст.</td><td>ЧСС: <input type ="text"> уд./хв</td><td>Вага: <input type="text"> кг</td></tr>
+        <tr><td>Окружність талії: <input type="text"> см</td><td></td><td></td></tr>
+      </table>
+
+  <p class="h3_style">Фактори ризику та спосіб життя</p>
+  
+  <table border="0"><tr><td><p>Сімейний анамнез. Чи спостерігалися у когось із близьких родичів нижчеперелічені захворювання?</p>
+</td>
+<td>
+  Так
+</td>
+<td>
+Ні
+</td>
+</tr>
+<tr><td><p>Інсульт</p>
+</td>
+<td>
+  <input type="radio" name="O" value="1" class="radio">
+</td>
+<td>
+   <input type="radio" name="O" value="2" checked>
+</td>
+</tr>
+<tr><td><p>Інфаркт міокарда</p>
+</td>
+<td>
+  <input type="radio" name="P" value="1">
+</td>
+<td>
+  <input type="radio" name="P" value="2" checked>
+</td>
+</tr>
+<tr><td><p>Смерть батька до 55 років від КВ ускладнень</p>
+</td>
+<td>
+  <input type="radio" name="Q" value="1">
+</td>
+<td>
+  <input type="radio" name="Q" value="2" checked>
+</td>
+</tr>
+<tr><td><p>Смерть матері до 65 років від КВ ускладнень</p>
+</td>
+<td>
+  <input type="radio" name="R" value="1">
+</td>
+<td>
+   <input type="radio" name="R" value="2" checked>
+</td>
+</tr>
+<tr><td><p>Фактори ризику</p>
+</td>
+<td>
+  <input type="radio" name="S" value="1">
+</td>
+<td>
+   <input type="radio" name="S" value="2" checked>
+</td>
+</tr>
+<tr><td><p>Куріння:</p>
+</td>
+<td>
+  <input type="radio" name="T" value="1">
+</td>
+<td>
+  <input type="radio" name="T" value="2" checked>
+</td>
+</tr>
+<tr><td><p>Курить на цей час цигарок на добу</p>
+</td>
+<td>
+  <input type="radio" name="U" value="1">
+</td>
+<td>
+  <input type="radio" name="U" value="2" checked>
+</td>
+</tr>
+<tr><td><p>Курив у минулому, покинув</p>
+</td>
+<td>
+   <input type="radio" name="V" value="1">
+</td>
+<td>
+   <input type="text" name="V" value="2" checked>
+</td>
+</tr>
+<tr><td><p>Ніколи</p>
+</td>
+<td>
+  <input type="radio" name="W" value="1">
+</td>
+<td>
+  <input type="radio" name="W" value="2" checked>
+</td>
+</tr>
+<tr><td><p>Інше: 100$, кальян тощо</p>
+</td>
+<td>
+  
+</td>
+<td>
+ 
+</td>
+</tr>
+<tr><td><p>Фізична активність:</p>
+</td>
+<td>
+  
+</td>
+<td>
+  
+</td>
+</tr>
+<tr><td><p>Фізична активність відсутня</p>
+</td>
+<td>
+ <input type="radio" name="X" value="1">
+</td>
+<td>
+   <input type="radio" name="X" value="2" checked>
+</td>
+</tr>
+<tr><td><p>Незначна фізична активність, щонайменше ЗО хв на тиждень (напр., ходьба в повільному або неквапливому темпі)</p>
+</td>
+<td>
+   <input type="radio" name="Y" value="1" checked>
+</td>
+<td>
+  <input type="radio" name="Y" value="2">
+</td>
+</tr>
+<tr><td><p>Фізична активність середньої інтенсивності, щонайменше ЗО хв на тиждень (напр., швидка ходьба, повільне катання на велосипеді, гра в теніс у парі)</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr><td><p>Енергійна фізична активність, щонайменше 20 хв на тиждень (біг, їзда на велосипеді &gt; 15 км/год, заняття з аеробіки)</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+</table>
+
+<p class="h3_style">Анамнез захворювання</p>
+<table border="0"><tr><td><p>Коли вперше був поставлений діагноз ІХС, вкажіть рік</p>
+</td>
+<td>
+  <input type="text">
+</td>
+</tr>
+<tr><td><p>Коли вперше був поставлений діагноз «стабільна стенокардія», вкажіть рік</p>
+</td>
+<td>
+  <input type="text">
+</td>
+</tr>
+<tr><td><p>Діагноз «стабільна стенокардія» був поставлений менше року тому, вкажіть місяць і рік</p>
+</td>
+<td>
+  <input type="text">
+</td>
+</tr>
+<tr><td><p>Діагноз «стенокардія» був поставлений більше року тому вкажіть рік</p>
+</td>
+<td>
+  <input type="text">
+</td>
+</tr>
+</table>
+ 
+ <table border="0"><tr>
+   <td><p>Інфаркт міокарда в анамнезі</p>
+<p>Якщо так, будь ласка, вкажіть рік останнього:</p>
+</td>
+<td>
+  <input type="radio" value="1">
+</td>
+<td>
+  <input type="radio" value="2">
+</td>
+</tr>
+<tr><td><p>Чи було проведено ЧКА (черезшкірну коронарну ангіопластику) Якщо так, будь ласка, вкажіть рік останньої:</p>
+</td>
+<td>
+  <input type="radio" name="" value="1">
+</td>
+<td>
+  <input type="radio" name="" value="2">
+</td>
+</tr>
+<tr><td><p>Чи було проведено АКШ (аортокоронарне шунтування) Якщо так, будь ласка, вкажіть рік останнього:</p>
+</td>
+<td>
+  <input type="radio" name="" value="1">
+</td>
+<td>
+  <input type="radio" name="" value="2">
+</td>
+</tr>
+<tr><td colspan="3"><p>Атеросклероз</p>
+</td>
+</tr>
+<tr><td><p>Атеросклероз аорти</p>
+</td>
+<td>
+  <input type="radio" value="1">
+</td>
+<td>
+  <input type="radio" value="2">
+</td>
+</tr>
+<tr><td><p>Атеросклероз ниркових артерій</p>
+</td>
+<td>
+  <input type="radio" value="1">
+</td>
+<td>
+  <input type="radio" value="2">
+</td>
+</tr>
+<tr><td><p>Атеросклероз артерій кінцівки</p>
+</td>
+<td>
+  <input type="radio" value="1">
+</td>
+<td>
+  <input type="radio" value="2">
+</td>
+</tr>
+<tr><td><p>Генералізований і неуточнений атеросклероз</p>
+</td>
+<td>
+  <input type="radio" value="1">
+</td>
+<td>
+  <input type="radio" value="2">
+</td>
+</tr>
+<tr><td><p>Атеросклероз церебральних судин</p>
+</td>
+<td>
+  <input type="radio" value="1">
+</td>
+<td>
+  <input type="radio" value="2">
+</td>
+</tr>
+<tr><td><p>Атеросклероз коронарних судин</p>
+</td>
+<td>
+  <input type="radio" value="1">
+</td>
+<td>
+  <input type="radio" value="2">
+</td>
+</tr>
+<tr><td><p>Атеросклероз мезентеріальних судин</p>
+</td>
+<td>
+  <input type="radio" value="1">
+</td>
+<td>
+  <input type="radio" value="2">
+</td>
+</tr>
+<tr><td><p>Наявність встановленого водія ритму</p>
+</td>
+<td>
+  <input type="radio" value="1">
+</td>
+<td>
+  <input type="radio" value="2">
+</td>
+</tr>
+<tr><td><p>Анамнез гострого порушення мозкового кровообігу або/та транзиторного ішемічного нападу Якщо так, будь ласка, вкажіть рік останнього:</p>
+</td>
+<td>
+  <input type="radio" value="1">
+</td>
+<td>
+  <input type="radio" value="2">
+</td>
+</tr>
+<tr><td><p>Астма/ХОЗЛ</p>
+<p>Якщо так, будь ласка, вкажіть рік встановлення діагнозу</p>
+</td>
+<td>
+  <input type="radio" value="1">
+</td>
+<td>
+  <input type="radio" value="2">
+</td>
+</tr>
+<tr><td><p>ЦД 2 типу</p>
+<p>Якщо так, будь ласка, вкажіть рік встановлення діагнозу</p>
+</td>
+<td>
+  <input type="radio" value="1">
+</td>
+<td>
+  <input type="radio" value="2">
+</td>
+</tr>
+<tr><td><p>Хронічна ниркова недостатність</p>
+<p>Якщо так, будь ласка, вкажіть рік встановлення діагнозу</p>
+</td>
+<td>
+  <input type="radio" value="1">
+</td>
+<td>
+  <input type="radio" value="2">
+</td>
+</tr>
+<tr><td><p>Інше</p>
+<p>Будь ласка, зазначте</p>
+</td>
+<td>
+  <input type="radio" value="1">
+</td>
+<td>
+  <input type="radio" value="2">
+</td>
+</tr>
+</table>
+ 
+ <p class="h3_style">Поточні симптоми стенокардії</p>
+      <table border="0"><tr><td><p>Наявність класичних нападів стенокардії чи еквівалентів, які виникають під час:</p>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr><td><p>Фізичного навантаження</p>
+</td>
+<td><input type="radio" value="1">
+</td>
+<td><input type="radio" value="2">
+</td>
+</tr>
+<tr><td><p>Емоційного стресу</p>
+</td>
+<td><input type="radio" value="1">
+</td>
+<td><input type="radio" value="2">
+</td>
+</tr>
+<tr><td><p>Переїдання</p>
+</td>
+<td><input type="radio" value="1">
+</td>
+<td><input type="radio" value="2">
+</td>
+</tr>
+<tr><td><p>У ранкові години одразу після сну</p>
+</td>
+<td><input type="radio" value="1">
+</td>
+<td><input type="radio" value="2">
+</td>
+</tr>
+<tr><td><p>Наявність класичних симптомів стенокардії, таких як дискомфорт, який локалізується у грудній клітці або за грудиною?</p>
+</td>
+<td><input type="radio" value="1">
+</td>
+<td><input type="radio" value="2">
+</td>
+</tr>
+<tr><td><p>Наявність еквівалентів стенокардії</p>
+</td>
+<td><input type="radio" value="1">
+</td>
+<td><input type="radio" value="2">
+</td>
+</tr>
+<tr><td><p>Задишка</p>
+</td>
+<td><input type="radio" value="1">
+</td>
+<td><input type="radio" value="2">
+</td>
+</tr>
+<tr><td><p>Біль не тільки у ділянці грудної клітки, біль іррадіює у будь-яке місце від епігастральної ділянки до нижньої щелепи чи зубів, між лопатками, чи від руки до зап'ястка та пальців</p>
+</td>
+<td><input type="radio" value="1">
+</td>
+<td><input type="radio" value="2">
+</td>
+</tr>
+<tr><td><p>Дискомфорт у ділянці живота</p>
+</td>
+<td><input type="radio" value="1">
+</td>
+<td><input type="radio" value="2">
+</td>
+</tr>
+<tr><td><p>Дискомфорт у грудях супроводжується менш специфічними симптомами, такими як втома, нудота, відчуття печіння, неспокій чи відчуття страху смерті</p>
+</td>
+<td><input type="radio" value="1">
+</td>
+<td><input type="radio" value="2">
+</td>
+</tr>
+<tr><td><p>Або інші, вкажіть</p>
+</td>
+<td><input type="radio" value="1">
+</td>
+<td><input type="radio" value="2">
+</td>
+</tr>
+<tr><td colspan="3"><p>Якщо наявні симптоми або еквіваленти стенокардії, вкажіть, будь ласка:</p>
+</td>
+</tr>
+<tr><td><p>Середня кількість нападів стенокардії на тиждень</p>
+</td>
+<td colspan="2"><input type="text">
+</td>
+</tr>
+<tr><td><p>Кількість спожитих таблеток/вприскувань спрею нітрогліцерину за тиждень</p>
+</td>
+<td colspan="2"><input type="text">
+</td>
+</tr>
+<tr><td colspan="3"><p>Клас ССЗ: Клас I <input type="radio" name="BK" value="1"> Клас II <input type="radio" name="BK" value="2"> Клас III <input type="radio" name="BK" value="3"> Клас IV <input type="radio" name="BK" value="4"></p>
+</td>
+</tr>
+<tr><td colspan="3"><p>Симптоми хронічної серцевої недостатності Якщо так:</p>
+<p>NYHA клас: Клас I <input type="radio" name="BL" value="1"> Клас II <input type="radio" name="BL" value="2"></p>
+</td>
+</tr>
+</table>
+
+<p class="h3_style">Останні результати лабараторних і фіскальних методів якщо такі обстеження наявні</p>
+<table>
+  <tr>
+    <td></td>
+    <td>г/л</td>
+    <td>мг/дл</td>
+    <td>мМ/дл</td>
+    <td>Дата</td>
+    <td>Недоступно</td>
+  </tr>
+<tr>
+  <td>Загальний рівень холестерину</td>
+  <td><input type="text"></td>
+</tr>
+</table>
+<table>
+  <tr>
+    <td></td>
+    <td>г/л</td>
+    <td>мг/Дл</td>
+    <td>мМ/дл</td>
+    <td>Дата</td>
+    <td>Недоступно</td>
+  </tr>
+<tr>
+  <td></td>
+
+</tr>
+<tr>
+<td>Загальний рівнь холестерину</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+  <td>ЛПВЩ</td>
+  </tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+<tr><td></td></tr>
+</table>
+<table border="0"><tr><td>
+</td>
+<td colspan="2"><br></td>
+<td colspan="2"><br></td>
+<td><br></td>
+</tr>
+<tr><td><p>Загальний рівень холестерину</p>
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+</tr>
+<tr><td><p>ЛПВЩ</p>
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+</tr>
+<tr><td><p>ЛПНЩ</p>
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+</tr>
+<tr><td><p>Тригліцериди натще</p>
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+<td><input type="text"
+</td>
+</tr>
+<tr><td><p>Креатинін сироватки</p>
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+</tr>
+<tr><td><p>Рівень глюкози натще (ммоль/л)</p>
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+</tr>
+<tr><td><p>НЬА,С (%)</p>
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+<td><input type="text">
+</td>
+</tr>
+</table>
+<p class="h3_style">ЕхоКГ двовимірна</p>
+ <table>
+   <tr>
+     <td>Дата: <input type="text"></td>
+     <td>Основні показники<br>
+     КДО <input type="text"> мл<br>
+     КСО <input type="text"> мл<br>
+     Фракція викиду ЛШ <input type="text">%
+     </td>
+     <td>Заключення: <textarea name="" col="20" row="15"></textarea></td>
+   </tr>
+   <tr>
+     <td colspan="3">Ехо КГ недоступна <input type="radio" name="CY" value="1">
+     </td>
+   </tr>
+ </table>
+ <p class="h3_style">ЕКГ</p>
+ <table>
+   <tr>
+     <td>Дата: <input type="text"></td>
+     <td>Місце для прикріплення плівки (оригінал або копія) за наявності</td>
+   </tr>
+   <tr>
+     <td><input type="text"></td>
+     <td>Заключення: <textarea name="" col="20" row="15"></textarea></td>
+   </tr>
+   <tr>
+     <td colspan="2">
+       ЕКГ недоступна <input type="checkbox">
+     </td>
+   </tr>
+ </table>
+ <p class="h3_style">Ангіографія</p>
+ <table>
+   <tr>
+     <td>Дата: <input type="text"></td>
+     <td>Розширене заключення: <textarea name="" col="20" row="15"></textarea>
+     </td>
+   </tr>
+   <tr>
+     <td colspan="2">Ангіографія недоступна: <input type="checkbox"></td>
+   </tr>
+ </table>
+ <p class="h3_style">Інші методи обстеження, якщо проводилися</p>
+<table>
+  <tr>
+    <td>Дата</td>
+    <td>Назва</td>
+    <td>Заключення</td>
+  </tr>
+  <tr>
+    <td><input type="text"></td>
+    <td><textarea name="" col="20" row="15"></textarea></td>
+    <td>
+      <textarea name="" col="20" row="15"></textarea>
+    </td>
+  </tr>
+</table>
+ <p class="h3_style">Будь-ласка, зазначте нижче поточне лікування пацієнта</p>
+ <table>
+   <tr></tr>
+ </table>
+ <table>
+   <tr class="color_gray">
+     <td></td>
+     <td>Міжнародна непатентована назва</td>
+     <td>Торгова назва препарату</td>
+     <td>Дозування, кратність прийому</td>
+   </tr>
+   <tr>
+     <td>Бета-блокатори</td>
+     <td><input type="text"></td>
+     <td><input type="text"></td>
+     <td><input type="text"></td>
+   </tr>
+   <tr>
+     <td>Антагоністи кальцію</td>
+     <td><input type="text"></td>
+     <td><input type="text"></td>
+     <td><input type="text"></td>
+   </tr>
+   <tr>
+     <td>Нітрати тривалої дії</td>
+     <td><input type="text"></td>
+     <td><input type="text"></td>
+     <td><input type="text"></td>
+   </tr>
+   <tr>
+     <td>Триметазидин</td>
+     <td><input type="text"></td>
+     <td><input type="text"></td>
+     <td><input type="text"></td>
+   </tr>
+   <tr>
+     <td>Ранолазин</td>
+     <td><input type="text"></td>
+     <td><input type="text"></td>
+     <td><input type="text"></td>
+   </tr>
+   <tr>
+     <td>Івабрадин</td>
+     <td><input type="text"></td>
+     <td><input type="text"></td>
+     <td><input type="text"></td>
+   </tr>
+   <tr>
+     <td>Молсидомін</td>
+     <td><input type="text"></td>
+     <td><input type="text"></td>
+     <td><input type="text"></td>
+   </tr>
+   <tr>
+     <td colspan="4">ІНШІ СЕРЦЕВО-СУДИННІ ЗАСОБИ</td>
+   </tr>
+   <tr>
+     <td>Антитромбоцитні засоби</td>
+     <td><input type="text"></td>
+     <td><input type="text"></td>
+     <td><input type="text"></td>
+   </tr>
+   <tr>
+     <td>Оральні антикогулянти</td>
+     <td><input type="text"></td>
+     <td><input type="text"></td>
+     <td><input type="text"></td>
+   </tr>
+   <tr>
+     <td>Статини</td>
+     <td><input type="text"></td>
+     <td><input type="text"></td>
+     <td><input type="text"></td>
+   </tr>
+   <tr>
+     <td>Інгібітори АПФ</td>
+     <td><input type="text"></td>
+     <td><input type="text"></td>
+     <td><input type="text"></td>
+   </tr>
+   <tr>
+     <td>
+       Блокатори рецепторів анготензину II
+     </td>
+     <td><input type="text"></td>
+     <td><input type="text"></td>
+     <td><input type="text"></td>
+     </tr>
+     <tr>
+       <td colspan="4">
+         ІНШІ ЗАСОБИ
+       </td>
+     </tr>
+     <tr>
+       <td>Преоральні протидіабетичні засоби</td>
+       <td><input type="text"></td>
+       <td><input type="text"></td>
+       <td><input type="text"></td>
+     </tr>
+     <tr>
+       <td><input type="text"></td>
+       <td><input type="text"></td>
+       <td><input type="text"></td>
+       <td><input type="text"></td>
+     </tr>
+     <tr>
+       <td><input type="text"></td>
+       <td><input type="text"></td>
+       <td><input type="text"></td>
+       <td><input type="text"></td>
+     </tr>
+     <tr>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+     </tr>
+     <tr>
+       <td>Інші препарати, якщо так будь-ласка вкажіть</td>
+       <td><input type="text"></td>
+       <td><input type="text"></td>
+       <td><input type="text"></td>
+     </tr>
+     <tr>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+        <td><input type="text"></td>
+     </tr>
+     <tr>
+       <td><input type="text"></td>
+       <td><input type="text"></td>
+       <td><input type="text"></td>
+       <td><input type="text"></td>
+     </tr>
+     <tr>
+       <td><input type="text"></td>
+       <td><input type="text"></td>
+       <td><input type="text"></td>
+       <td><input type="text"></td>
+     </tr>
+     <tr>
+       <td><input type="text"></td>
+       <td><input type="text"></td>
+       <td><input type="text"></td>
+       <td><input type="text"></td>
+     </tr>
+
+ </table>
+
+ <div class="rating">
+   <p class="bold text-align-center font-family font-size">Оцінка пацієнтом обмеження щоденної активності</p>
+   <p class="text-align-center font-family font-size">Попросіть пацієнта оцінити наскільки його/її симптоми стенокардії обмежують його/її щоденну активність<br> за наведеною нижче шкалою</p>
+   <img src="img/7.png" class="image">
+ </div>
+ <table>
+   <tr>
+     <td>Вкажіть бал</td><td><input type="text"></td>
+   </tr>
+ </table>
+
+ <p class="h3_style">Дотримання пацієнтом поточного режиму лікування</p>
+
+<table>
+  <tr>
+    <td>Сьогодні зранку ви забули прийняти свої ліки?</td>
+    <td><input type="radio" name="" value="1"></td>
+    <td><input type="radio" name="" value="2"></td>
+  </tr>
+  <tr>
+    <td>З часу останньої консультації у Вас закінчувалися ліки?</td>
+    <td><input type="radio" name="" value="1"></td>
+    <td><input type="radio" name="" value="2"></td>
+  </tr>
+<tr>
+  <td>Ви коли-небудь приймали ліки з запізненям?</td>
+  <td><input type="radio" name="" value="1"></td>
+  <td><input type="radio" name="" value="2"></td>
+</tr>
+<tr>
+<td>Ви коли-небудь забували прийняти ліки?</td>
+<td><input type="radio" name="" value="1"></td>
+<td><input type="radio" name="" value="2"></td>
+</tr>
+<tr>
+  <td>Ви коли-небудть не вживали ліків, оскільки вважали що вони заподіють більше шкоди, ніж принесуть бажаний ефект?</td>
+  <td><input type="radio" name="" value="1"></td>
+  <td><input type="radio" name="" value="2"></td>
+</tr>
+<tr>
+  <td>Ви думаєте, що приймаєте занадто багато ліків?</td>
+  <td><input type="radio" name="" value="1"></td>
+  <td><input type="radio" name="" value="2"></td>
+</tr>
+<tr>
+  <td>Загалом ТАК</td>
+  <td colspan="2"><input type="checkbox" name="" value="1"></td>
+</tr>
+<tr class="color_gray">
+<td>
+Чи рекомендоване продовжене лікування триметазидином?
+</td>
+<td>
+<input type="radio" name="" value="1" checked>
+</td>
+<td>
+  <input type="radio" name="" value="2">
+</td>
+</tr>
+<tr>
+  <td>Якщо на попереднє питання відповідь ТАК:</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>У якій дозі:</td>
+  <td></td>
+  <td></td>
+</tr>
+<tr>
+  <td>20 мг тричі на день</td>
+  <td><input type="radio" name="" value="1"></td>
+  <td></td>
+</tr>
+<tr>
+  <td>35 мг двічі на день</td>
+  <td><input type="radio" name="" value="2"></td>
+  <td><td>
+</tr>
+
+<tr>
+  <td>80 мг один раз на день</td>
+  <td><input type="radio" name="" value="3"></td>
+  <td></td>
+</tr>
+<tr class="color_gray">
+  <td>Чи рекомендоване продовження лікування триметазидином?</td>
+  <td><input type="radio" name="" value="1"></td>
+  <td><input type="radio" name="" value="2"></td>
+</tr>
+<tr>
+  <td>Рекомендоване дозування:</td>
+  <td></td>
+  <td></td>
+  </tr>
+  <tr>
+    <td>20 мг тричі на день</td>
+    <td><input type="radio" name="" value="1"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>35 мг двічі на день</td>
+    <td><input type="radio" name="" value="2"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>80 мг один раз на день</td>
+    <td><input type="radio" name="" value="3"></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><p class="h3_style">Якщо ви вказали, що пацієнь не буде продовжувати терапію триметазидином, вкажіть причину</p></td>
+    <td colspan="2">
+      <input type="text">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3" class="color_gray bold">
+      Дотримання пацієнтом поточного режиму лікування триметазидином
+    </td>
+  </tr>
+  <tr>
+    <td>Сьогодні Ви забули прийняти триметазидин?</td>
+    <td><input type="radio" name="" value="1"></td>
+    <td><input type="radio" name="" value="2"></td>
+  </tr>
+  <tr>
+    <td>З часу останньої консультації ви приймали триметазидин пізніше ніж зазвичай?</td>
+    <td><input type="radio" name="" value="1"></td>
+    <td><input type="radio" name="" value="2"></td>
+  </tr>
+  <tr>
+    <td>З часу останньої консультації чи забував пацієнт приймати триметазидин?</td>
+    <td><input type="radio" name="" value="1"></td>
+    <td><input type="radio" name="" value="2"></td>
+  </tr>
+  <tr>
+    <td colspan="3" class="bold">Чи зручно вам приймати триматизедин?</td>
+  </tr>
+  
+</table>
+<table>
+  <tr>
+    <td class="size-1"><input type="text" class="size-1"></td>
+    <td><input type="text" class="size-1"></td>
+    <td><input type="text" class="size-1"></td>
+    <td><input type="text" class="size-1"></td>
+    <td><input type="text" class="size-1"></td>
+    <td><input type="text" class="size-1"></td>
+    <td><input type="text" class="size-1"></td>
+    <td><input type="text" class="size-1"></td>
+    <td><input type="text" class="size-1"></td>
+    <td><input type="text" class="size-1"></td>
+  </tr>
+  <tr>
+    <td colspan="10"><img src="img/8.png"></td>
+  </tr>
+  <tr><td colspan="10" class="bold">Будь-ласка, оцініть наскільки пацієнт задоволений терпією триметазидином?</td></tr>
+  <tr>
+<td class="size-1"><input type="text" class="size-1"></td>
+    <td><input type="text" class="size-1"></td>
+    <td><input type="text" class="size-1"></td>
+    <td><input type="text" class="size-1"></td>
+    <td><input type="text" class="size-1"></td>
+    <td><input type="text" class="size-1"></td>
+    <td><input type="text" class="size-1"></td>
+    <td><input type="text" class="size-1"></td>
+    <td><input type="text" class="size-1"></td>
+    <td><input type="text" class="size-1"></td>
+  </tr>
+  
+  <tr>
+    <td colspan="10"><img src="img/9.png"></td>
+  </tr>
+</table>
+<table>
+  <tr><td><p class="h3_style">Чи спостерігалися побічні реакції на препарат Сервье у цьому дослідженні?</p></td><td><input type="radio" name="" value="1"></td><td><input type="radio" name="" value="2"></td></tr>
+</table>
+<table>
+  <tr><td>Корекція терапії</td><td>Так</td><td>Ні</td></tr>
+  <tr><td>Чи було скореговано терапію</td><td><input type="radio" namee="" value="1"></td><td><input type="radio" name="" value="2"></td></tr>
+</table>
+
+<p class="h3_style">Зазначте будь-ласка нижче, які препарати були рекомендовані пацієнту?</p>
+<p class="h3_style">Відзначте препарати, прийом яких був продовжений, та препарати які порекомендував лікар</p>
+<table>
+  <tr>
+    <td></td><td>Міжнародна патентована назва</td>
+    <td>Торгова назва препарату</td>
+    <td>
+      Дозування, прийому кратність
+    </td>
+  </tr>
+  <tr>
+    <td>Бета-блокатори</td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+  </tr>
+  <tr>
+    <td>Антагоністи кальцію</td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+  </tr>
+  <tr>
+    <td>Нітрати тривалої дії</td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+  </tr>
+  <tr>
+    <td>Триметазидин</td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+  </tr>
+  <tr>
+    <td>Ранолазин</td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+  </tr>
+  <tr>
+    <td>Івабрадин</td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+  </tr>
+  <tr>
+    <td>Молсидомін</td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+  </tr>
+  <tr>
+    <td colspan="4">ІНШІ СЕРЦЕВО-СУДИННІ ЗАСОБИ</td>
+  </tr>
+  <tr>
+    <td>Антитромбоцитні засоби</td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+  </tr>
+
+  <tr>
+    <td>Оральні антикогулянти</td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+    <td><input type="text"></td>
+  </tr>
+<tr>
+  <td>Статини</td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+</tr>
+<tr>
+  <td>Інгібітори АПФ</td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+</tr>
+<tr>
+  <td>Блокатори рецепторів ангіотензину II</td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+</tr>
+
+<tr>
+  <td>Діуретики</td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+</tr>
+
+<tr>
+  <td>Інші антигіпертензивні засоби</td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+</tr>
+<tr>
+  <td>Антиаритмічн засоби</td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+</tr>
+<tr>
+  <td colspan="4">ІНШІ ЗАСОБИ</td>
+</tr>
+<tr>
+<td>Преоральні протидіабетичні засоби</td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+<td><input type="text"></td>
+</tr>
+<tr>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+</tr>
+<tr>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+</tr>
+<tr>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+</tr>
+<tr>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+</tr>
+<tr>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+</tr>
+<tr>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+</tr>
+
+<tr>
+  <td colspa="4">Інші препарати</td>
+</tr>
+<tr>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+</tr>
+<tr>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+</tr>
+<tr>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+</tr>
+<tr>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+</tr>
+<tr>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+</tr>
+<tr>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+</tr>
+<tr>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+</tr>
+<tr>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+  <td><input type="text"></td>
+</tr>
+</table>
+
+<input type="submit" name="submit" >
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
