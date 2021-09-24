@@ -34,26 +34,20 @@
 	<script src="script.js"></script>
     <script type="text/javascript">
 
-var elem = document.querySelector('#elem');
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxgAEClQYMty1Dinf72JnY6DagVd54wAl8p45m-Y-2CRS6DPh8/exec'
 
-createTable(elem, 4, 4);
+const form = document.forms['google-sheet']
 
-function createTable(parent, rows, cols){
-var table = document.createElement('table');
+ form.addEventListener('submit', e  => {
+  e.preventDefault()
 
-for (i = 0; i < rows; i++){
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 
-  var tr = document.createElement('tr');
-    for (j = 0; j < cols; j++){
-      var td = document.createElement('td');
-      tr.appendChild(td);
-}
-  table.appendChild(tr);
-}
 
-  parent.appendChild(table);
-}
+  .then(response => alert("Sent data"))
+  .catch(error => console.error('error', error. message))
 
+}) 
     </script>
     
     
